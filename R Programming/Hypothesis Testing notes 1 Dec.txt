@@ -1,0 +1,32 @@
+Hypothesis Testing
+
+>Population
+>Sample
+
+>>Hypothesis(Assumptions)
+>Null Hypothesis  (H0)   :  
+>Alternative Hypothesis (Ha) : 
+
+
+Assumptions:
+
+1)) Null Hypothesis----
+effect of the new medicine launched in the market is equal to the effect of older medicine launched in the market, 
+i.e  theoretical value = observed value
+
+2)) Alternative Hypothesis----
+(Alternative Hypothesis always contradicts the null hypothesis)
+effect of new medicine is always greater than the effect of older medicine launched in the market.
+
+3)) Tests(statistics)
+
+1) χ2 chi square test
+2) t - student test
+3) Fisher's Z test
+
+4)) Level of Significance (α)
+
+
+
+ 
+

@@ -1,0 +1,26 @@
+#alternate is what we want to prove with statistical data
+#null is what we have right now, without any assumption
+
+#Keywords:--------------------
+#P VALUE
+#CONFIDENCE INTERVAL
+
+#LEVEL OF SIGNIFICANCE(α)---------
+#The confidence with which we reject the null hypothesis
+#or the confidence with which we accept the alternate hypothesis.
+
+#confidence interval - 95%
+#error acceptable uptill - 5%
+
+
+#CRITERIA FOR VALIDATION HYPOTHESIS
+#P < α Reject null, accept alternate
+#P > α Fail to reject null, reject alternate
+
+#1 sample T test
+
+#2 sample T test
+
+#>>Dependent and Independent
+#>>Independent - Two different samples, comparing mean(S)
+#>>Dependent - 

@@ -1,0 +1,88 @@
+#RAJ KANSAL
+#502304205
+
+
+#1
+
+library(dplyr)
+data = read.csv('D:/MBA/raj/sampledata.csv')
+data   
+
+#2
+
+q2 = sample_n(data,3)   
+q2
+
+
+
+#3
+
+q3 = View(data)  
+q3
+
+
+
+#4
+
+q4 = sample_frac(data,0.1) 
+q4
+
+#5
+
+q5 = distinct(data,Index)  
+q5
+
+
+#q6
+
+q6 = distinct(data, Index, .keep_all = TRUE) 
+q6
+
+#q7
+
+q7 = distinct(data, Index, Y2010)  
+q7
+
+
+#q8
+
+q8 = select(data, Index, State:Y2008)  
+q8
+
+
+#q9
+q9 = select(data, -Index, -State)
+q9
+
+#q10
+q10 = data %>% select(starts_with("Y"))
+q10
+
+
+#q11
+q11 = select(data, -starts_with("Y"))
+q11
+
+
+#q12
+q12 = data %>% select(data, contains('I'))
+q12
+
+#q13
+q13 = select(data, State, everything())
+q13
+
+
+#q14
+q14 = rename(data, Index1 = Index)
+q14
+
+
+#q15
+q15 = filter(data, Index == 'A')
+q15
+
+
+#q16
+q16 = filter(data, Index %in% c("A", "C"))
+q16

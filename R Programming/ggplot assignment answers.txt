@@ -1,0 +1,83 @@
+R ggplot assignment answers
+>>>>To create a ggplot scatterplot
+
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+  geom_point() +
+  
+  labs(
+    x = "Sepal Length",
+    y = "Petal Length",
+    title = "Iris Sepal Length vs. Petal Length"
+  ) +
+  
+  theme(
+    plot.title = element_text(color = "blue", size = 16, face = "bold"),
+    legend.title = element_text(color = "red", size = 14, face = "italic"),
+    legend.text = element_text(color = "green", size = 12)
+  )
+
+
+>>>>>>>change the datapoints shape to diamonds
+
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +geom_point(shape = 18) +labs(x = "Sepal Length",y = "Petal Length",title = "Scatter Plot of Sepal Length vs. Petal Length by Species")
+
+
+>>>>>>>>>Add a linear regression line
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+  geom_point() +
+  labs(
+    x = "Sepal Length",
+    y = "Petal Length",
+    title = "Scatter Plot of Sepal Length vs. Petal Length by Species"
+  )+ geom_smooth(method = "lm", se = FALSE)
+
+
+>>>>>>>>>using the "mpg" dataframe...............
+>>>>>>>>>bins wala question
+
+ggplot(mpg, aes(x = hwy)) +
+  geom_histogram(fill = "green", color = "red", bins = 20) +
+  labs(
+    x = "Highway MPG",
+    y = "Frequency",
+    title = "Histogram of Highway MPG"
+  )
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>5 bins
+
+ggplot(mpg, aes(x = hwy)) +
+  geom_histogram(fill = "green", color = "red", bins = 5) +
+  labs(
+    x = "Highway MPG",
+    y = "Frequency",
+    title = "Histogram of Highway MPG"
+  )
+
+>>>>>>>>>>>>>>>>>>>>>>> stacked bar chart
+
+ggplot(mpg, aes(x = class, fill = class)) +
+  geom_bar() +
+  labs(
+    x = "Vehicle Class",
+    y = "Count",
+    title = "Stacked Bar Chart of Vehicle Classes"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+>>>>>>>>>>>>>>>pie chart
+
+pie_chart_data <- table(mpg$class)
+pie_chart_data <- data.frame(class = names(pie_chart_data), count = as.numeric(pie_chart_data))
+
+pie_chart <- ggplot(pie_chart_data, aes(x = "", y = count, fill = class)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y") +
+  labs(
+    title = "Pie Chart of Vehicle Classes"
+  ) +
+  theme_void()  # Remove axes and labels
+
+
+print(pie_chart)

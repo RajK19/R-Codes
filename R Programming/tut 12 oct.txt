@@ -1,0 +1,6 @@
+-bottom to top
+
+box - skewness
+vertical line - range
+data points - outliers
+horizontal line - median

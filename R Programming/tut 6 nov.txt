@@ -1,0 +1,24 @@
+something that is not proven is null
+
+H0 : (Assumption)
+
+something that has to proven is alternate
+
+Ha: (Prove)
+
+>>
+1 sample T test
+-population mean
+-line sample
+
+>>
+2 sample T test(independent and dependent)
+--2 types
+
+1) (sample 1) - mean
+2) (sample 2) - (mean)
+
+
+if p value is less than statistical significance and accept the alternate hypothesis.
+if p value is greater than 0.5, you failed to reject the null hypothesis.
+
